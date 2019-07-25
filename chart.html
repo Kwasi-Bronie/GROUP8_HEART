@@ -14,30 +14,34 @@
     </script>
 
 </head>
+   <body>
+     <div class="card p-5 text-center text-light bg-info m-5">
+         <img src="/static/images/heart-rate-red.jpg" width="100px" class="img-rounded mx-auto" alt="Heart image">
+         <h2> YOUR RESTING HEART PULSE PER MINUTE GRAPH</h2>
+    </div>
+    <div class="text-center">
+       <h2> Interpretation of your heart pulse graph. </h2>
+       <p> Look at the range of ages in the table below to interprete your heart pulse graph.</p>
+    </div>
  
-   <div class="jumbotron"  style="background-color:pink"> 
-           <h2><i>   YOUR RESTING HEART PULSE PER MINUTE GRAPH</i></h2>
-     <body style="background-color:white">  
-     <img scr ="heart.jpg" alt="vector.com" style="width:104px;height:142px;">
-
-
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
-
-       <h2> Interpretation of your heart pulse graph. </h2>
-       <p> Look at the range of ages in the table below to interprete your heart pulse graph.</p>
- 
-
-<div class="container">
-          <h3 style="color:red;">1.Beats per minute for men and women according to ages</h3> 
-          <p></p>
-          <div> 
-<h3 style="color:red;" >3.Health Tips</h3>
-      <p>The following can  affect your heart rate:</p>
-      <ul>
-          <li>age </li.
-          <table class="table table-bordered" style="width:50%; float:left">
+     <div class="container my-3">
+       <h3 class="text-danger">Please Check below to find your Heart rate performance according to age</h3>
+        <div class="row">
+        <div class="col">
+          <table class="table table-bordered">
            <thead>
              <tr class="danger"> 
               <th>Age(for men)</th>
@@ -108,29 +112,24 @@
             <td>77-83</td>
             <td>76-81</td>
             <td>74-79</td>
-     
           </tr>
+
           <tr class="danger">
             <td>Poor</td>
             <td>82+</td>
-e="color:red;" >3.Health Tips</h3>
-         
-  
-</body>
-</html>
             <td>82+</td>
             <td>83+</td>
             <td>84+</td>
             <td>82+</td>
             <td>80+</td>
-       
           </tr>
          </thead>
         <tbody> 
        </table>
-</div>
-<div class="container">
-        <table class="table table-bordered" style="width:50%; float:left">
+      </div>
+
+      <div class="col">
+        <table class="table table-bordered">
           <thead>
             <tr class="Danger">
               <th>Age(for women)</th>
@@ -142,6 +141,7 @@ e="color:red;" >3.Health Tips</h3>
               <th>65+</th>
             </tr>
            </thead>
+
            <tbody>
             <tr>
             <tr class="active">
@@ -210,25 +210,22 @@ e="color:red;" >3.Health Tips</h3>
              <td>84+</td>
              <td>84+</td>
              <td>85+</td>
-
            </tr>
           </tbody>
+
         </table>
- </div>     
+      </div>
+     </div>
 
-<h3 style="color:red;" > 2.Your heart rate pulse graph </h3>
+ </div> 
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <canvas id="canvas"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<footer class="bg-info text-light text-center p-5">
+   <p> The REJs Team</p>
+   <p>Copy right @2019 | All right reserved</p>
+   
+</footer> 
+   
+
 <!--suppress JSUnresolvedLibraryURL -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <!--suppress JSUnresolvedLibraryURL -->
@@ -243,10 +240,10 @@ e="color:red;" >3.Health Tips</h3>
                 labels: [],
                 datasets: [{
                     label: "Random Dataset",
-                    backgroundColor: 'blue(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.02)',
                     borderColor: 'rgb(255, 99, 132)',
                     data: [],
-                    fill: false,
+                    fill: true,
                 }],
             },
             options: {
@@ -296,8 +293,6 @@ e="color:red;" >3.Health Tips</h3>
         }
     });
 </script>
-     <h3 style="color:red;" >3.Health Tips</h3>
-         
-  
+        
 </body>
 </html>
